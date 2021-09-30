@@ -1,13 +1,13 @@
-const currencyEl_one = document.getElementById('currency-one');
-const amountEl_one = document.getElementById('amount-one');
-const currencyEl_two = document.getElementById('currency-two');
-const amountEl_two = document.getElementById('amount-two');
-const rateEl = document.getElementById('rate');
-const swap = document.getElementById('swap');
+const currencyEl_one = document.querySelector('#currency-one');
+const amountEl_one = document.querySelector('#amount-one');
+const curTwo = document.querySelector('#currency-two');
+const amountEl_two = document.querySelector('#amount-two');
+const rateEl = document.querySelector('#rate');
+const swap = document.querySelector('#swap');
 
 function calculate() {
   const currency_one = currencyEl_one.value;
-  const currency_two = currencyEl_two.value;
+  const currency_two =curTwoo.value;
   fetch("https://open.exchangerate-api.com/v6/latest")
     .then(res => res.json())
     .then(data => {
@@ -21,14 +21,13 @@ function calculate() {
 
 // Event Listener
 currencyEl_one.addEventListener('change', calculate);
-amountEl_one.addEventListener('input', calculate);
-currencyEl_two.addEventListener('change', calculate);
+amountEl_one.addEventListener('input', calculate);curTwoo.addEventListener('change', calculate);
 amountEl_two.addEventListener('input', calculate);
 
 swap.addEventListener('click', () => {
   const temp = currencyEl_one.value;
-  currencyEl_one.value = currencyEl_two.value;
-  currencyEl_two.value = temp;
+  currencyEl_one.value =curTwoo.value;
+ curTwoo.value = temp;
   calculate();
 });
 
