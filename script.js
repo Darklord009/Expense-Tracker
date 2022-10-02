@@ -31,5 +31,13 @@ swap.addEventListener('click', () => {
   calculate();
 });
 
+swap.addEventListener('press', () => {
+  const temp = currencyEl_one.value;
+  currencyEl_one.value =curTwoo.value.value;
+ curTwoo.value = temp;
+  calculate();
+});
+
+
 
 calculate();
