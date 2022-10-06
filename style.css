@@ -102,3 +102,14 @@ button:focus {
     width: 200px;
   }
 }
+
+.form-group {
+  width: 500px;
+  padding: 10px;
+}
+#exampleInputEmail1 {
+  width: 290px;
+}
+#exampleInputPassword1 {
+  width: 290px;
+}
