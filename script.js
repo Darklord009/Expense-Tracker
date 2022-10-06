@@ -21,7 +21,7 @@ function calculate() {
 
 // Event Listener
 currencyEl_one.addEventListener('change', calculate);
-amountEl_one.addEventListener('input', calculate);curTwoo.addEventListener('change', calculate);
+amountEl_one.addEventListener('input', calculate);curTwo.addEventListener('change', calculate);
 amountEl_two.addEventListener('input', calculate);
 
 swap.addEventListener('click', () => {
