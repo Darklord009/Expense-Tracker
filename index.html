@@ -12,23 +12,38 @@
     <h1>Exchange Rate Calculator</h1>
     <p>Choose the currency and the amounts to get the exchange rate</p>
     <center>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label><br>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label><br>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </center>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label><br />
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          /><br />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label><br />
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </center>
     <div class="container">
       <div class="currency">
         <select id="currency-one">
@@ -89,9 +104,7 @@
       </div>
 
       <div class="swap-rate-container">
-        <button class="btn" id="swap">
-          Swap
-        </button>
+        <button class="btn" id="swap">Swap</button>
         <div class="rate" id="rate"></div>
       </div>
 
@@ -211,6 +224,13 @@
         <input type="number" id="amount-two" placeholder="0" />
       </div>
     </div>
+    <footer>
+      <p>
+        Copyright &copy; 2022
+        <span class="bold-text">Exchange Rate Calculator</span> - All Rights
+        Reserved.
+      </p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
